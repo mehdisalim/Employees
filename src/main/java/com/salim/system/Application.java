@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @SpringBootApplication
 @Component
 public class Application {
@@ -13,7 +16,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    /*
+
     @Scheduled(cron = "0 * 9 * * ?")
     public void cronJobSch() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
@@ -21,7 +24,7 @@ public class Application {
         String strDate = sdf.format(now);
         System.out.println("Java cron job expression:: " + strDate);
     }
-     */
+     /**/
 
 
 }
